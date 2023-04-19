@@ -170,14 +170,14 @@ import Modal from "bootstrap/js/dist/modal";
 
 export default {
     props: {
-    products: {
+    product: {
       type: Object,
       default() { return { }; },
     },
   },
   watch: {
     product() {
-      this.tempProduct = this.products;
+      this.tempProduct = this.product;
     },
   },
   data() {
